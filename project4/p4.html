@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="p4.js" defer></script>
+  <link href="p4.css" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>  PROJECT 4</title>
+</head>
+
+<body>
+  <h1>Clickable Dropdown</h1>
+  <p>Click on the button to open the dropdown menu.</p>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a  onclick="getName()">NAME</a>
+      <a  onclick="getAddress()">ADDRESS</a>
+      <a  onclick="getHours()">BUSINESS HOURS</a>
+      <a  onclick="getMenu()">MENU</a>
+        <li class="list" id="breakfast" onclick="getBreakfast()">Breakfast</li>
+        <li class="list" id="brunch" onclick="getBrunch()">Brunch</li>
+        <li class="list" id="lunch" onclick="getLunch()">Lunch</li>
+        <li class="list" id="dinner" onclick="getDinner()">Dinner</li>
+        <li class="list" id="drinks" onclick="getDrinks()">Drinks</li>
+      <a  onclick="getServices()">SERVICES and FEATURES</a>
+    </div>
+	
+            <div id="displaySection">
+                <p id="name"></p>
+                <p id="adress"></p>
+                <p id="hours"> </p>
+                <p id="menu"></p>
+                <p id="services"></p>
+                <p></p>
+
+            </div>
+
+            <div id="menuSection">
+              <p id="menu1"></p>
+              <p id="menu2"></p>
+              <p id="menu3"> </p>
+              <p id="menu4"></p>
+              <p id="menu5"></p>
+              <p></p>
+
+          </div>
+
+          
+
+  </div>
+  
+
+
+  </body>
+  </html>

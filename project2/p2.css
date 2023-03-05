@@ -1,0 +1,198 @@
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+
+body {
+
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #D3D3D3;
+  background-color: #f1f1f1;
+  background-image: linear-gradient(to bottom, white 20%, #D3D3D3);
+  margin-right:10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.tab.active {
+  background: color solid white;
+  background-image: linear-gradient(to bottom, white 20%, white);
+  font-weight:bold;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 1px #ccc;
+  margin-bottom: -1px;
+}
+
+.tab:hover {
+  background-image: linear-gradient(to bottom, white 20%, #D3D3D3);
+  color:orange;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+iframe{
+
+  border:none
+}
+
+.slideshow-container{
+  max-width: 1000px;
+  position: flex;
+  margin: auto;
+} 
+
+.slides img{
+
+  display:none;
+}
+
+.activeimg {
+
+    width: 500px;
+    height: 500px;
+    display:flex !important;
+    margin-left:28%;
+  
+
+}
+
+#prevbutton{
+
+  margin-left:50%;
+}
+
+#contactid{
+  display:none
+}
+
+#contactstext{
+  display: none
+}
+
+.contactvisible{
+  display:block !important;
+}
+
+
+.video.container{
+  display: box ;
+  text-align: center;
+
+}
+
+.video{
+  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#play{
+  margin-left:45%;
+}
+#forward,#reset,#backward{
+  text-align: center;
+  }
+
+#slideshowtext{
+  margin-left:42%;
+  color:green;
+}
+
+
+#dragtext {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  
+}
+
+#drag-container {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  color: black;
+  font-size: 20px;
+}
+
+
+
+
+.kirby {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 3s; 
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  from {left: 0%;
+    transform: rotate(0);}
+  to {left: 50%;
+    transform: rotate(720deg)}
+
+}
+
+
+.verification{
+  display:none;
+}
+
+
+
+@keyframes extra{
+  0%   {left:-65px; bottom:200px;}
+  25%  {left:50; bottom:0px;}
+  50%  {left:150px; bottom:200px;}
+  75%  {left:300px; bottom:0px;}
+  100% {left:550px; bottom:200px;}
+}
+
+#ea1{
+  width:1700px;
+  display:block;
+  background-color: cyan;
+  z-index: -5;
+  position:absolute;
+}
+
+#ea2,#ea3,#ea4{
+  margin-top: 200px;
+  width:150px;
+  height:100px;
+  position:relative;
+  z-index: 2;
+  animation-name: extra;
+  animation-duration: 3s; 
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}

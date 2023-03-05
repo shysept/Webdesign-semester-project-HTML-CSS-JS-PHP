@@ -1,0 +1,105 @@
+<title> p1</title>
+
+<html>
+
+<script type="text/javascript">
+
+/***********************************************
+IMPORTANT NOTE:
+I took this code that splits the user interface to 2 .css directly
+ from  http://www.dynamicdrive.com/dynamicindex9/dyncss.htm , to split .css file
+
+
+* Different CSS depending on OS (mac/pc)- (c) Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var csstype="external" //Specify type of CSS to use. "Inline" or "external"
+
+var pc_externalcss='p1a.css'   //if "external", specify PC/default css file here
+var mac_externalcss='p1a.css' //if "external", specify Mac css file here
+///////No need to edit beyond here////////////
+
+var mactest=navigator.userAgent.indexOf("Mac")!=-1
+if (csstype=="inline"){
+document.write('<style type="text/css">')
+if (mactest)
+document.write(mac_css)
+else
+document.write(pc_css)
+document.write('</style>')
+}
+else if (csstype=="external")
+document.write('<link rel="stylesheet" type="text/css" href="'+ (mactest? mac_externalcss : pc_externalcss) +'">')
+
+</script>
+
+
+<body>
+
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Manufacturer</th>
+	<th>Size</th>
+	<th>Unit Price</th>
+    <th>Quantity</th>
+	<th>Total Price</th>
+  </tr>
+  <tr>
+    <td>Corn Flakes</td>
+    <td>Kellogg's</td>
+	<td>18 oz.</td>
+	<td>2.50</td>
+    <td>1</td>
+	<td>2.50</td>
+  </tr>
+    <tr>
+    <td>Solid White Tuna</td>
+    <td>Starkist</td>
+	<td>5 oz</td>
+	<td>2.79</td>
+    <td>2</td>
+	<td>5.58</td>
+  </tr>
+  <tr>
+    <td>Cream of Mushroom Soup</td>
+    <td>Campbell's</td>
+	<td>10.75 oz.	</td>
+	<td>1.00</td>
+    <td>2</td>
+	<td>2.00</td>
+  </tr>
+  <tr>
+    <td>2% Lowfat Milk	</td>
+    <td>Safeway</td>
+	<td>0.5 gal	</td>
+	<td>1.99</td>
+    <td>1</td>
+	<td>1.99</td>
+  </tr>
+  <tr>
+    <td>Extra-Wide Egg Noodles</td>
+    <td>Golden Grain</td>
+	<td>12 oz.</td>
+	<td>0.87</td>
+    <td>3</td>
+	<td>2.61</td>
+  
+  <tfoot>
+    <tr>
+        <td>Total:</td>
+        <td></td>
+        <td></td>
+        <td></td>        
+        <td>9</td>
+        <td>14.68</td>
+    </tr>
+</tfoot>
+</table>
+
+</body>
+</html>
+

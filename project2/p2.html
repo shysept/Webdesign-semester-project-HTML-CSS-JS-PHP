@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="p2.js" defer></script>
+  <link href="p2.css" rel="stylesheet">
+  <title>  PROJECT 2</title>
+</head>
+
+<body>
+    <ul class="tabs">
+      <li data-tab-target="#home" class="active tab">Home</li>
+      <li data-tab-target="#cis408" class="tab">CIS 408 News</li>
+      <li data-tab-target="#mycourses" class="tab">MyCourses</li>
+      <li data-tab-target="#videoplayer" class="tab">Video Player</li>
+      <li data-tab-target="#addtocontactlist" class="tab">AddToContactList</li>
+    </ul>
+
+    <div  class="tab-content">
+      <div id="home" data-tab-content class="active">
+        <h1>Home</h1>
+        <div id="drag-container">
+          <div id="dragtext">DRAGGABLE TEXT</div>
+        </div>
+<br>
+    <div>
+  <iframe src="../project0/p0.html" width="100%" height="800 px" frameBorder="0" scrolling="no"> </iframe>    
+            <div class="slideshow-container">
+              <H1 id="slideshowtext"> SLIDESHOW</H1>
+              <div class="slides">
+                <img id="one" class="activeimg" src="../images/1.jpg" />
+                <img id="two" class="" src="../images/2.jpg" />
+                <img id="three" class="" src="../images/3.jpg" />
+                <button id="prevbutton"><</button>
+                <h id="slidecount">1</h>
+                <button id="nextbutton">></button>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div id="cis408" data-tab-content>
+        <h1>CIS 408 News</h1>
+          <iframe src="http://eecs.csuohio.edu/~sschung/CIS408/CIS408.html"  width="45%" height="1800 px"></iframe>
+          <iframe src="http://eecs.csuohio.edu/~sschung/"  width="50%"  height="1800 px"></iframe>
+      </div>
+      <div id="mycourses" data-tab-content>
+        <h1>Class List</h1>
+        <ul>
+          <li>Spring 2022
+              <ul>
+                <li><a href="CIS408/MyCIS408.html">CIS 408 Internet Computing</a>
+                  <li>CIS  368	Object Oriented Design/Program</li>
+                  <li>CIS  470	Mobile App Development</li>
+                  <li>EEC  383	Digital Systems</li>
+                  <li>EEC  494	Senior Design II</li>
+              </ul>
+              <p>Extra Credit animation</p>
+              <img id="ea1" class="extranim" src="../images/nyan.gif" />
+              <img id="ea2" class="extranim" src="../images/kirby.gif" />
+              <img id="ea3" class="extranim" src="../images/catpop.gif" />
+              <img id="ea4" class="extranim" src="../images/peped.gif" />
+              <img id="ea4" class="extranim" src="../images/rick.gif" />
+            
+          </li>
+        </ul>
+      </div>
+      <div id="videoplayer" data-tab-content>
+        <h1>Video Player</h1>
+        <div class="video-container">
+        <video class="video" id="video" src="../images/video.mp4" type="video/mp4"></video>
+        <button id = "play" onclick="playandpause()">></button>
+        <button id = "forward" onclick="forward()">>></button>
+        <button id = "reset" onclick="reset()">|></button>
+        <button id = "backward" onclick="backward()"><<</button>
+         </div>
+    
+    </div>
+      <div id="addtocontactlist" data-tab-content>
+        <h1>AddToContactList</h1>
+<div>
+        <form id="contactlistinput" action="ServerScriptFile.html">       
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email"><br> 
+          <input type="submit" value="Submit">
+        </form>
+          <p>Click Verify to check your submission.</p>
+          <button onclick="verifysubmission()" id="verifybutton">Verify</button>
+        <div class="verification" id="verification">
+          <div id="verify0">Key name of the first name:</div>
+          <div id="verify1">Key value of the first name: </div>
+          <div id="verify2">Key name of the last name: </div>
+          <div id="verify3">Key value of the last name: </div>
+          <div id="verify4">Key name of the email:  </div>
+          <div id="verify5">Key value of the first name: </div>
+          <div id="verify6">Value of action attribute of the Form element, which is URL : </div>
+        </div>
+          </div>
+          <br> Problem 4 for Section 5 moving animation to right <p>
+            <img class="kirby" src="../images/kirby.gif" alt="Kirby">
+      </div>
+      
+      <div> 
+
+      </div>
+
+   </div>
+</body>
+</html>
+
